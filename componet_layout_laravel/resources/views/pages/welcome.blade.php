@@ -15,9 +15,10 @@
     </style>
 @endpush
 
+
+
 @section('content')
     <h1 class=" text-center">This is Home page</h1>
-
     <div class="card-header">
         Featured
     </div>
