@@ -24,15 +24,9 @@
     <h1 class=" text-center">This is About page</h1>
     <div class=" container">
         <div class="row mt-5">
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-body">
-                        left
-                    </div>
-                </div>
-            </div>
+            @include('components.rightbar')
 
-            <div class="card col-md-6 ">
+            <div class="card col-md-6  mb-2 mt-2">
                 <div class="card-header">
                     Featured
                 </div>
@@ -43,13 +37,7 @@
                 </div>
             </div>
 
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-body">
-                        right
-                    </div>
-                </div>
-            </div>
+            @include('components.leftbar')
         </div>
     </div>
     @include('components.footer')
