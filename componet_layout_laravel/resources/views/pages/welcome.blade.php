@@ -22,7 +22,7 @@
 <body>
 
     @include('components.navbar')
-    <h1 class=" text-center">This is About page</h1>
+    <h1 class=" text-center">This is Home page</h1>
     <div class=" container">
         <div class="row mt-5">
             <div class="col-md-3">

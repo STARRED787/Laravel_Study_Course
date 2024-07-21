@@ -31,6 +31,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="card col-md-6 ">
                 <div class="card-header">
                     Featured
@@ -50,9 +51,9 @@
                 </div>
             </div>
         </div>
-
-        @include('components.footer')
-        @include('libraries.script')
+    </div>
+    @include('components.footer')
+    @include('libraries.script')
 </body>
 
 
