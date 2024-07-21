@@ -53,7 +53,7 @@
                 </div>
             </div>
 
-
+            @include('components.footer')
             @include('libraries.script')
     </body>
 
