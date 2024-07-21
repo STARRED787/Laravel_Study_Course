@@ -1,17 +1,20 @@
 @extends('layouts.layout01')
 
 <title>Home</title>
-<style>
-    .card-header {
-        background-color: rgb(8, 56, 230);
-        color: rgb(0, 0, 0);
-    }
+@push('styles')
+    <style>
+        .card-header {
+            background-color: rgb(8, 56, 230);
+            color: rgb(0, 0, 0);
+        }
 
-    .btn-primary {
-        background-color: rgb(8, 56, 230);
-        color: rgb(17, 0, 0);
-    }
-</style>
+        .btn-primary {
+            background-color: rgb(8, 56, 230);
+            color: rgb(17, 0, 0);
+        }
+    </style>
+@endpush
+
 @section('content')
     <h1 class=" text-center">This is Home page</h1>
 
