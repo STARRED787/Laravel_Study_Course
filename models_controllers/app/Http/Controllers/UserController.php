@@ -13,4 +13,15 @@ class UserController extends Controller
     {
         $this->user = new User();
     }
+
+    public function saveData()
+    {
+        $saveData = [
+            'name' => 'Test User 03',
+            'email' => 'testuser03@gmail.com',
+            'password' => '123456',
+        ];
+
+        $this->user->create($saveData);
+    }
 }

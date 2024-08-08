@@ -13,13 +13,15 @@
     <div class="container">
         <div class="row mt-5">
             <div class="col-md-3">
-                <input type="text" class="form-control" placeholder="Name">
+
             </div>
             <div class="col-md-6">
-                <buton class="btn btn-primary">Save</buton>
+                <a href="/save-data">
+                    <buton class="btn btn-primary">Save</buton>
+                </a>
             </div>
             <div class="col-md-3">
-                <button class="btn btn-danger">Delete</button>
+
             </div>
         </div>
     </div>
