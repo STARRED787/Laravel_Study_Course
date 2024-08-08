@@ -11,14 +11,33 @@
 
 <body>
     <div class="container">
+        <h1 class=" text-4xl font-semibold text-center"> Data Form</h1>
         <div class="row mt-5">
             <div class="col-md-3">
-
-            </div>
-            <div class="col-md-6">
                 <a href="/save-data">
                     <buton class="btn btn-primary">Save</buton>
                 </a>
+            </div>
+            <div class="col-md-6">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">name</th>
+                            <th scope="col">email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach ($users as $user)
+                            <tr>
+                                <td> {{ $user->id }}</td>
+                                <td> {{ $user->name }}</td>
+                                <td> {{ $user->email }}</td>
+                            </tr>
+                        @endforeach
+
+                    </tbody>
+                </table>
             </div>
             <div class="col-md-3">
 

@@ -24,4 +24,11 @@ class UserController extends Controller
 
         $this->user->create($saveData);
     }
+
+    public function showData()
+    {
+
+        $response['users'] = $this->user->all();
+        return view('welcome')->with($response);
+    }
 }
