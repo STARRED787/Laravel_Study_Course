@@ -17,6 +17,15 @@
                 <a href="/save-data">
                     <buton class="btn btn-primary">Save</buton>
                 </a>
+                <a href="/update-data">
+                    <buton class="btn btn-success">update</buton>
+                </a>
+                <a href="/delete-data">
+                    <buton class="btn btn-danger">Delete</buton>
+                </a>
+            </div>
+            <div class="col-md-6">
+
             </div>
             <div class="col-md-6">
                 <table class="table">
@@ -28,19 +37,16 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach ($users as $user)
+                        @foreach ($users as $userdatashow)
                             <tr>
-                                <td> {{ $user->id }}</td>
-                                <td> {{ $user->name }}</td>
-                                <td> {{ $user->email }}</td>
+                                <td> {{ $userdatashow->id }}</td>
+                                <td> {{ $userdatashow->name }}</td>
+                                <td> {{ $userdatashow->email }}</td>
                             </tr>
                         @endforeach
 
                     </tbody>
                 </table>
-            </div>
-            <div class="col-md-3">
-
             </div>
         </div>
     </div>
